@@ -1,0 +1,24 @@
+{
+  "name": "Ct Custom Application Pwa Meetup",
+  "entryPointUriPath": "ct-custom-application-pwa-meetup",
+  "cloudIdentifier": "gcp-eu",
+  "env": {
+    "production": {
+      "url": "https://commercetools-poc-ext.vercel.app/"
+    }
+  },
+  "menuLinks": {
+    "icon": "HeartIcon",
+    "defaultLabel": "Ct Custom Application Pwa Meetup",
+    "labelAllLocales": [],
+    "permissions": [],
+    "submenuLinks": [
+      {
+        "uriPath": "channels",
+        "defaultLabel": "Channels",
+        "labelAllLocales": [],
+        "permissions": []
+      }
+    ]
+  }
+}

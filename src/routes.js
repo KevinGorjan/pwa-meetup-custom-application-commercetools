@@ -20,7 +20,7 @@ const ApplicationRoutes = () => {
   return (
     <Spacings.Inset scale="l">
       <Switch>
-        <Route path={`${match.path}/channels`}>
+        <Route path={`${match.path}/ct-custom-application-pwa-meetup`}>
           {canViewChannels ? (
             <Channels linkToWelcome={match.url} />
           ) : (
@@ -28,7 +28,6 @@ const ApplicationRoutes = () => {
           )}
         </Route>
         <Route>
-          
           <Welcome />
         </Route>
       </Switch>

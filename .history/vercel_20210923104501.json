@@ -1,0 +1,29 @@
+{
+    "version": 2,
+    "public": true,
+    "name": "ct-custom-application-pwa-meetup-44xn52lol-kevin-gorjan.vercel.app",
+    "alias": "ct-custom-application-pwa-meetup-44xn52lol-kevin-gorjan.vercel.app",
+    "regions": ["bru"],
+    "builds": [
+      {
+        "src": "public/**",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*).(js.map|js|css|txt|html|png)",
+        "dest": "/public/$1.$2",
+        "headers": {
+          "cache-control": "s-maxage=31536000,immutable"
+        }
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/public/index.html",
+        "headers": {
+          "Cache-Control": "no-cache"
+        }
+      }
+    ]
+  }
