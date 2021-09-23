@@ -84,7 +84,7 @@ const Welcome = () => {
           <PrimaryButton
             iconLeft={<ChainIcon />}
             label="Go to the UI Kit"
-            onClick={() => window.open("https://uikit.commercetools.com/", "_blank")}
+            onClick={() => alert('Button clicked')}
             isDisabled={false}
           />
         </div>

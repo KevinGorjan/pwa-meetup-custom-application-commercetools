@@ -10,7 +10,7 @@ import messages from './messages';
 import styles from './welcome.mod.css';
 import WebDeveloperSvg from './web-developer.svg';
 import PrimaryButton from '@commercetools-uikit/primary-button';
-import { ChainIcon } from '@commercetools-uikit/icons';
+import { InformationIcon } from '@commercetools-uikit/icons';
 
 const WrapWith = (props) =>
   props.condition ? props.wrapper(props.children) : props.children;
@@ -81,12 +81,7 @@ const Welcome = () => {
               height="100%"
             />
           </div>
-          <PrimaryButton
-            iconLeft={<ChainIcon />}
-            label="Go to the UI Kit"
-            onClick={() => window.open("https://uikit.commercetools.com/", "_blank")}
-            isDisabled={false}
-          />
+
         </div>
       </Spacings.Stack>
     </Constraints.Horizontal>
